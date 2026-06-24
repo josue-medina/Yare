@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Cumpleaños de Yare!</title>
+    <meta name="description" content="Invitación digital al 4º cumpleaños de Yare. ¡Acompáñanos en esta aventura con capibaras!">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Fredoka & Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="has-cover">
+    <button class="invitation-cover" id="invitation-cover" type="button" aria-label="Abrir invitación de Yare">
+        <span class="cover-glow cover-glow-one"></span>
+        <span class="cover-glow cover-glow-two"></span>
+        <span class="cover-card">
+            <span class="cover-kicker">Te invito a mi fiesta</span>
+            <span class="cover-title">Yare 4 años</span>
+            <span class="cover-image-wrap">
+                <img src="capi1.png" alt="Capibara de cumpleaños" class="cover-capybara">
+            </span>
+            <span class="cover-click">Clic para abrir</span>
+        </span>
+    </button>
+
+    <header class="hero-header">
+        <!-- Floating decorative elements -->
+        <div class="decorations">
+            <span class="decor leaf leaf-1">🍃</span>
+            <span class="decor leaf leaf-2">🌿</span>
+            <span class="decor cloud cloud-1">☁️</span>
+            <span class="decor cloud cloud-2">☁️</span>
+            <span class="decor sparkle sparkle-1">✨</span>
+            <span class="decor sparkle sparkle-2">✨</span>
+        </div>
+
+        <div class="header-container">
+            <!-- Badge / Invitation intro -->
+            <div class="intro-badge animate-pop">
+                <span>🎈 ¡Estás Invitado! 🎈</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="main-title animate-fade-in">
+                ¡Yare cumple <span class="highlight-age">4</span>!
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle animate-fade-in-delayed">
+                Te invito a celebrar un día lleno de diversión, risas y muchos capibaras. 🦫✨
+            </p>
+
+            <!-- Hero Image Container (Playful blob frame) -->
+            <div class="hero-image-wrapper animate-float">
+                <div class="blob-frame">
+                    <img id="header-avatar" src="yare.jpeg" alt="Yare" class="hero-image">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Wave transition to next section -->
+        <div class="header-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,90.13,26.3,160.15,43.3,237.58,68.83,321.39,56.44Z" class="wave-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+            <div class="container animate-fade-in-delayed">
+                <h2 class="section-title">¿Cuánto falta para la diversión? 🥳</h2>
+
+                <!-- Event date display above countdown -->
+                <div class="event-date-banner">
+                    <span class="calendar-icon">📅</span>
+                    <p class="event-date-text">Te esperamos el <strong>domingo 12 de Julio del 2026</strong> a las <strong>15:00 hrs</strong></p>
+                </div>
+                
+                <div class="countdown-wrapper">
+                    <div class="countdown-card">
+                        <div class="countdown-time" id="days">00</div>
+                        <div class="countdown-label">Días</div>
+                    </div>
+                    <div class="countdown-card">
+                        <div class="countdown-time" id="hours">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-card">
+                        <div class="countdown-time" id="minutes">00</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                    <div class="countdown-card">
+                        <div class="countdown-time" id="seconds">00</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
+                </div>
+
+                <p class="countdown-message" id="countdown-message">¡Prepárate para un día inolvidable con Yare y sus capibaras!</p>
+            </div>
+        </section>
+
+        <div class="image-break image-break-left">
+            <img src="capi2.png" alt="Capibara celebrando la fiesta de Yare">
+        </div>
+
+        <!-- Location Section -->
+        <section class="location-section">
+            <div class="container animate-fade-in-delayed">
+                <div class="location-card">
+                    <span class="location-decor location-leaf">🍃</span>
+                    <span class="location-decor location-water">💧</span>
+                    <div class="location-icon-wrapper">
+                        <span class="location-icon">📍</span>
+                    </div>
+                    <h3 class="location-title">¿Dónde será la fiesta?</h3>
+                    <p class="location-name">Salón de Eventos "Laguna Azul"</p>
+                    <p class="location-address">Laguna Azul #116, Colonia Lago 3</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Laguna+Azul+116+Colonia+Lago+3" target="_blank" class="btn-location">
+                        <span>🗺️</span>
+                        Ver ubicación en Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="image-break image-break-right">
+            <img src="capi3.jpg" alt="Capibara junto a la diversión de la fiesta">
+        </div>
+
+        <!-- Pool Note Section -->
+        <section class="pool-note-section">
+            <div class="container animate-fade-in-delayed">
+                <div class="pool-note-card">
+                    <span class="pool-note-decor pool-note-splash">💦</span>
+                    <span class="pool-note-decor pool-note-leaf">🌿</span>
+                    <div class="pool-note-icon-wrapper">
+                        <span class="pool-note-icon">🏊</span>
+                    </div>
+                    <p class="pool-note-label">Nota importante</p>
+                    <h3 class="pool-note-title">¡Vengan listos para nadar!</h3>
+                    <p class="pool-note-text">Niños, lleven su traje de baño porque habrá albercas y mucha diversión en el agua.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="image-break image-break-left">
+            <img src="capi4.png.webp" alt="Capibara lista para nadar">
+        </div>
+
+        <!-- RSVP Section -->
+        <section class="rsvp-section">
+            <div class="container animate-fade-in-delayed">
+                <form class="rsvp-card" id="rsvp-form">
+                    <span class="rsvp-decor rsvp-balloon">🎈</span>
+                    <span class="rsvp-decor rsvp-sparkle">✨</span>
+                    <div class="rsvp-icon-wrapper">
+                        <span class="rsvp-icon">💌</span>
+                    </div>
+                    <p class="rsvp-label">Confirmar asistencia</p>
+                    <h3 class="rsvp-title">¿Nos acompañan?</h3>
+
+                    <div class="form-group">
+                        <span class="form-label">Asistiré:</span>
+                        <div class="radio-row">
+                            <label class="choice-pill">
+                                <input type="radio" name="attendance" value="si" checked>
+                                <span>Sí</span>
+                            </label>
+                            <label class="choice-pill">
+                                <input type="radio" name="attendance" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="guest-count">¿Cuántas personas?</label>
+                        <select id="guest-count" name="guestCount" class="form-control">
+                            <option value="0">0 personas</option>
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 personas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="family-name">Familia</label>
+                        <input id="family-name" name="familyName" class="form-control" type="text" placeholder="Ej. Familia Medina Soria" required>
+                    </div>
+
+                    <button type="submit" class="btn-rsvp">
+                        <span>📲</span>
+                        Enviar confirmación
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Countdown timer function
+        const targetDate = new Date("July 12, 2026 15:00:00").getTime();
+        const invitationCover = document.getElementById('invitation-cover');
+
+        invitationCover.addEventListener('click', function() {
+            document.body.classList.add('cover-open');
+        });
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference < 0) {
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+                document.getElementById("countdown-message").innerText = "¡La fiesta ha comenzado! 🎉🦫";
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = String(days).padStart(2, '0');
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+        }
+
+        // Run countdown initially and set interval
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        const rsvpForm = document.getElementById('rsvp-form');
+        const attendanceInputs = document.querySelectorAll('input[name="attendance"]');
+        const guestCountSelect = document.getElementById('guest-count');
+
+        attendanceInputs.forEach(input => {
+            input.addEventListener('change', function() {
+                if (this.value === 'no') {
+                    guestCountSelect.value = '0';
+                }
+            });
+        });
+
+        rsvpForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const familyName = document.getElementById('family-name').value.trim();
+            const attendance = document.querySelector('input[name="attendance"]:checked').value;
+            const guestCount = attendance === 'no' ? '0' : guestCountSelect.value;
+
+            if (!familyName) {
+                alert('Por favor escribe el nombre de tu familia.');
+                return;
+            }
+
+            const attendanceText = attendance === 'si'
+                ? `sí asistirá con ${guestCount} ${guestCount === '1' ? 'persona' : 'personas'}`
+                : 'no asistirá';
+
+            const message = `Fam: ${familyName} ${attendanceText} a la fiesta de Yare.`;
+            const whatsappUrl = `https://wa.me/524431084220?text=${encodeURIComponent(message)}`;
+
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
