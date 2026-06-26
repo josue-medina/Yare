@@ -25,6 +25,8 @@
         </span>
     </button>
 
+    <audio id="party-song" src="yarecancion.mp3" preload="auto" loop></audio>
+
     <header class="hero-header">
         <!-- Floating decorative elements -->
         <div class="decorations">
@@ -120,7 +122,7 @@
                     <h3 class="location-title">¿Dónde será la fiesta?</h3>
                     <p class="location-name">Salón de Eventos "Laguna Azul"</p>
                     <p class="location-address">Laguna Azul #116, Colonia Lago 3</p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Laguna+Azul+116+Colonia+Lago+3" target="_blank" class="btn-location">
+                    <a href="https://maps.app.goo.gl/i6KTXmG4gTABvyuYA" target="_blank" class="btn-location">
                         <span>🗺️</span>
                         Ver ubicación en Google Maps
                     </a>
@@ -205,13 +207,26 @@
 
     </main>
 
+    <footer class="site-footer">
+        <p>
+            Invitacion creada por
+            <a href="https://www.facebook.com/profile.php?id=61575459699823&amp;locale=es_LA" target="_blank" rel="noopener noreferrer">
+                Invitaciones Kiki
+            </a>
+        </p>
+    </footer>
+
     <script>
         // Countdown timer function
         const targetDate = new Date("July 12, 2026 15:00:00").getTime();
         const invitationCover = document.getElementById('invitation-cover');
+        const partySong = document.getElementById('party-song');
 
         invitationCover.addEventListener('click', function() {
             document.body.classList.add('cover-open');
+            partySong.play().catch(function() {
+                console.log('El navegador bloqueó la reproducción automática del audio.');
+            });
         });
 
         function updateCountdown() {
@@ -271,7 +286,7 @@
                 : 'no asistirá';
 
             const message = `Fam: ${familyName} ${attendanceText} a la fiesta de Yare.`;
-            const whatsappUrl = `https://wa.me/524431084220?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/524431662351?text=${encodeURIComponent(message)}`;
 
             window.open(whatsappUrl, '_blank');
         });
